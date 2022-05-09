@@ -2,7 +2,7 @@
 
 #Load relevant modules
 module load python
-source activate /n/holystore01/LABS/liau_lab/Users/nlue/conda_envs/deeptools_env
+source activate [.../deeptools_env]
 
 #Define directories
 CHIP_DIR=[...]
