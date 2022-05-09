@@ -6,16 +6,19 @@ DNA methylation is critical for regulating gene expression, necessitating its ac
 
 ## Repository Contents
 This repository contains .py and .sh scripts used for next-generation sequencing data analysis and evolutionary conservation analysis. Inputs are provided in the subfolders or as Source Data in the publication, as detailed below. Contents are organized into the following subdirectories:
-1. Base editing sgRNA library annotation script
+1. Base editing sgRNA library annotation scripts
 2. Base editor scanning data analysis scripts
 3. Genotyping analysis scripts
 4. PWWP evolutionary conservation analysis script
 5. Genomics analysis scripts
 
-## 1. Base editing sgRNA library annotation script
-
+## 1. Base editing sgRNA library annotation scripts
+Code for annotating sgRNAs with key information for analysis (i.e., to generate Supplementary Table 1). Two inputs are included in this directory:
+- 200225_DNMT3A2_Input.fasta, which contains the sequences of DNMT3A isoform 2 (NM_153759.3, hg38) coding sequence exons. Each record corresponds to an exon with flanking intronic sequences (55 bp upstream and 55 bp downstream).
+- Library-input-v3.csv, which contains the sequences of library sgRNAs and base information.
 
 ## 2. Base editor scanning data analysis scripts
+
 
 
 ## 3. Genotyping analysis scripts
