@@ -29,11 +29,10 @@ Code for annotating sgRNAs with key information for analysis (i.e., to generate 
 
 
 ## 5. Genomics analysis scripts
-
-
-
-
-
+Code for analysis of ChIP-seq and RRBS data. Raw and processed ChIP-seq and RRBS data have been deposited to NCBI GEO (GSE199890).
+- ChIP-seq_data_processing.sh, for aligning and processing ChIP-seq raw reads to generate input-normalized bigWig files.
+- RRBS_data_processing.sh, for trimming, aligning, and processing RRBS raw reads to generate bedGraph files.
+- RRBS_and_ChIP-seq_analysis.py, for downstream analysis of genomics data.
 
 ## Citations
 - Vinyard, M. E. et al. CRISPR-suppressor scanning reveals a nonenzymatic role of LSD1 in AML. _Nat. Chem. Biol._ 15, 529–539 (2019).
