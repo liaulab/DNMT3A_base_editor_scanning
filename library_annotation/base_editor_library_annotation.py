@@ -635,10 +635,3 @@ annotated_df.to_csv('Annotated_Library_Full.csv', index=False)
 # This generates Supplementary Table 1.
 annotated_df[key_cols].to_csv('Annotated_Library_Key_Columns.csv', index=False)
 
-
-
-
-
-
-
-
