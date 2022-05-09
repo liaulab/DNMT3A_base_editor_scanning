@@ -37,8 +37,17 @@ Vinyard, M. E. et al. CRISPR-suppressor scanning reveals a nonenzymatic role of 
 
 Gosavi, P. M. et al. Profiling the Landscape of Drug Resistance Mutations in Neosubstrates to Molecular Glue Degraders. _ACS Cent. Sci._ (2021).
 
+Li, H. & Durbin, R. Fast and accurate short read alignment with Burrows–Wheeler transform. _Bioinformatics_ 25, 1754–1760 (2009).
+
+Picard, <https://github.com/broadinstitute/picard>
+
+Danecek, P. et al. Twelve years of SAMtools and BCFtools. _Gigascience_ 10, giab008 (2021).
+
 Ramírez, F. et al. deepTools2: a next generation web server for deep-sequencing data analysis. _Nucleic Acids Res._ 44, W160–W165 (2016).
 
+Krueger, F. & Andrews, S. R. Bismark: a flexible aligner and methylation caller for Bisulfite-Seq applications. _Bioinformatics_ 27, 1571–1572 (2011).
+
+Quinlan, A. R. & Hall, I. M. BEDTools: a flexible suite of utilities for comparing genomic features. _Bioinformatics_ 26, 841–842 (2010).
 
 
 
