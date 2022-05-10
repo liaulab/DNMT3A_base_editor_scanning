@@ -22,17 +22,16 @@ Code used to annotate sgRNAs with key information for analysis (i.e., to generat
 Code used for processing raw reads and analyzing DNMT3A base editor scanning results, including PWES analysis. 'Batch_info.csv' input file is included in this directory. Supplementary Table 2 provides the normalized read counts at the replicate level. Raw fastq files are available upon request.
 
 ## 3. Genotyping analysis scripts
+Code used to analyze genotyping results and construct allele tables.
 
-
-## 4. Targeted bisulfite sequencing analysis script
-
+## 4. Reporter bisulfite sequencing analysis script
+Code used to analyze reporter bisulfite sequencing results.
 
 ## 5. PWWP evolutionary conservation analysis script
-
-
+Code used to...
 
 ## 6. Genomics analysis scripts
-Code for analysis of ChIP-seq and RRBS data. Raw and processed ChIP-seq and RRBS data have been deposited to NCBI GEO (GSE199890).
+Code used for analysis of ChIP-seq and RRBS data. Raw and processed ChIP-seq and RRBS data have been deposited to NCBI GEO (GSE199890).
 - ChIP-seq_data_processing.sh, for aligning and processing ChIP-seq raw reads to generate input-normalized bigWig files.
 - RRBS_data_processing.sh, for trimming, aligning, and processing RRBS raw reads to generate bedGraph files.
 - RRBS_and_ChIP-seq_analysis.py, for downstream analysis of genomics data.
