@@ -13,22 +13,24 @@ This repository contains .py and .sh scripts used for next-generation sequencing
 5. Genomics analysis scripts
 
 ## 1. Base editing sgRNA library annotation scripts
-Code for annotating sgRNAs with key information for analysis (i.e., to generate Supplementary Table 1). Two inputs are included in this directory:
+Code used to annotate sgRNAs with key information for analysis (i.e., to generate Supplementary Table 1). Two inputs are included in this directory:
 - 200225_DNMT3A2_Input.fasta, which contains the sequences of DNMT3A isoform 2 (NM_153759.3, hg38) coding sequence exons. Each record corresponds to an exon with flanking intronic sequences (55 bp upstream and 55 bp downstream).
 - Library-input-v3.csv, which contains the sequences of library sgRNAs and base information.
 
 ## 2. Base editor scanning data analysis scripts
-
-
+Code used for processing raw reads and analyzing DNMT3A base editor scanning results, including PWES analysis. 'Batch_info.csv' input file is included in this directory.
 
 ## 3. Genotyping analysis scripts
 
 
-## 4. PWWP evolutionary conservation analysis script
+## 4. Targeted bisulfite sequencing analysis script
+
+
+## 5. PWWP evolutionary conservation analysis script
 
 
 
-## 5. Genomics analysis scripts
+## 6. Genomics analysis scripts
 Code for analysis of ChIP-seq and RRBS data. Raw and processed ChIP-seq and RRBS data have been deposited to NCBI GEO (GSE199890).
 - ChIP-seq_data_processing.sh, for aligning and processing ChIP-seq raw reads to generate input-normalized bigWig files.
 - RRBS_data_processing.sh, for trimming, aligning, and processing RRBS raw reads to generate bedGraph files.
