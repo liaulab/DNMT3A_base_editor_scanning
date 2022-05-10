@@ -80,7 +80,7 @@ def plot_scatter(df_plot, x_col, y_col, hue_col, out_name, palette='coolwarm',
 #%% CpG-level analysis
 # Code to make Fig. 5f, left.
 
-df_ABCDE = pd.read_csv('220326_ABCDE_global_methylation.tsv', sep='\t')
+df_ABCDE = pd.read_csv('ABCDE_global_methylation.tsv', sep='\t')
 
 # Define sample names
 rrbs_list = ['WT_1', 'WT_2', 'R297W_1', 'R297W_2', 'W326R_1', 'W326R_2',
@@ -123,7 +123,7 @@ plot_boxes(df_plot=df_ABCDE_nonzero_melt.loc[df_ABCDE_nonzero_melt['variable'].i
 #%% Analysis of methylation in 500 kb bins
 # Code to make Fig. 5f, right.
 
-df_500 = pd.read_csv('220408_ABCDE_intersection_500kb_bins_global_methylation.tsv', sep='\t')
+df_500 = pd.read_csv('ABCDE_intersection_500kb_bins_global_methylation.tsv', sep='\t')
 
 # Rename columns
 df_500.columns = col_list
@@ -155,7 +155,7 @@ plot_boxes(df_plot=df_500_melt.loc[df_500_melt['variable'].isin(avg_list)],
 #%% Histone modification quartile analysis
 # Code to make Fig. 5g and Extended Data Fig. 8a
 
-df_10_ABCDE = pd.read_csv('220326_ABCDE_intersection_global_methylation.tsv', sep='\t')
+df_10_ABCDE = pd.read_csv('ABCDE_intersection_global_methylation.tsv', sep='\t')
 
 # Rename columns
 df_10_ABCDE.columns = col_list + ['H3K4me3', 'H3K27me3', 'H3K36me2']
