@@ -11,7 +11,7 @@ LAMBDA_DIR=[...] #directory containing lambda phage genome prepared with bismark
 ALIGN_DIR=[...] #directory for alignments to mm10 genome
 ALIGN_LAMBDA_DIR=[...] #directory for alignments to lambda phage genome
 
-#Define arrays/variables for barcodes/names/etc
+#Representative arrays/variables for barcodes/names/etc
 SAMPLE_ARRAY=('A1' 'B1' 'C1')
 LANE_2=('ACTCTC' 'TGAGCT' 'GAGACG')
 NAMES_2=('A1' 'B1' 'C1')
@@ -110,15 +110,15 @@ for FILE in *4col_CpG.bedGraph; do $SCRIPT_DIR/bedGraphToBigWig $FILE $SCRIPT_DI
 ##### Use DeepTools multiBigwigSummary to generate .tsv files to use in downstream analysis #####
 
 #Define key directories
-CHIP_DIR=/n/holystore01/LABS/liau_lab/Users/nlue/NZL10273/220323_bigwigs
-OUT_DIR_2=/n/holystore01/LABS/liau_lab/Users/nlue/NZL10280/220323_misc_analysis/CpG_level_global_analysis
-BIGWIG_DIR=/n/holystore01/LABS/liau_lab/Users/nlue/NZL10280/220323_misc_analysis/rrbs_bigwigs
+CHIP_DIR=[...] #directory containing input-normalized ChIP-seq bigwig files
+OUT_DIR_2=[...] #output directory for CpG-level global analysis
+BIGWIG_DIR=[...] #output directory for bigwig files
 
 cd $BIGWIG_DIR
 
 # Methylation at CpG-level. Only CpGs with 5x coverage across all samples.
 multiBigwigSummary BED-file -b A1_5_coverage_CpG.bw A2_5_coverage_CpG.bw B1_5_coverage_CpG.bw B2_5_coverage_CpG.bw C1_5_coverage_CpG.bw C2_5_coverage_CpG.bw D1_5_coverage_CpG.bw D2_5_coverage_CpG.bw E1_5_coverage_CpG.bw E2_5_coverage_CpG.bw \
-	-l WT_1 WT_2 R297W_1 R297W_2 W326R_1 W326R_2 E338K_1 E338K_2 E752K_1 E752K_2 --BED intersections/ABCDE_5x_intersection.bed -o $OUT_DIR_2/220326_ABCDE_global_methylation.npz --outRawCounts $OUT_DIR_2/220326_ABCDE_global_methylation.tsv -p max
+	-l WT_1 WT_2 R297W_1 R297W_2 W326R_1 W326R_2 E338K_1 E338K_2 E752K_1 E752K_2 --BED intersections/ABCDE_5x_intersection.bed -o $OUT_DIR_2/ABCDE_global_methylation.npz --outRawCounts $OUT_DIR_2/ABCDE_global_methylation.tsv -p max
 
 cd intersections/
 
@@ -134,13 +134,13 @@ multiBigwigSummary bins --binSize 10000 -p max --smartLabels -b A1_5_coverage_AB
 	E1_5_coverage_ABCDE_intersected.bw \
 	E2_5_coverage_ABCDE_intersected.bw \
 	$CHIP_DIR/H3K4me3_input_log2fc_200bp_bins_1kb_smoothed.bw $CHIP_DIR/H3K27me3_input_log2fc_200bp_bins_1kb_smoothed.bw $CHIP_DIR/H3K36me2_input_log2fc_200bp_bins_1kb_smoothed.bw \
-	-o 220326_ABCDE_intersection_global_methylation.npz --outRawCounts 220326_ABCDE_intersection_global_methylation.tsv
+	-o ABCDE_intersection_global_methylation.npz --outRawCounts ABCDE_intersection_global_methylation.tsv
 
 # Methylation in 500 kb bins. Only CpGs with 5x coverage across all samples.
 multiBigwigSummary bins --binSize 500000 -p max --smartLabels -b A1_5_coverage_ABCDE_intersected.bw A2_5_coverage_ABCDE_intersected.bw \
 	B1_5_coverage_ABCDE_intersected.bw B2_5_coverage_ABCDE_intersected.bw C1_5_coverage_ABCDE_intersected.bw C2_5_coverage_ABCDE_intersected.bw \
 	D1_5_coverage_ABCDE_intersected.bw D2_5_coverage_ABCDE_intersected.bw E1_5_coverage_ABCDE_intersected.bw E2_5_coverage_ABCDE_intersected.bw \
-	-o 220408_ABCDE_intersection_500kb_bins_global_methylation.npz --outRawCounts 220408_ABCDE_intersection_500kb_bins_global_methylation.tsv
+	-o ABCDE_intersection_500kb_bins_global_methylation.npz --outRawCounts ABCDE_intersection_500kb_bins_global_methylation.tsv
 
 
 
