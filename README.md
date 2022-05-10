@@ -42,6 +42,9 @@ Code used to analyze ChIP-seq and RRBS data. Raw and processed ChIP-seq and RRBS
 ## Citations
 - Vinyard, M. E. et al. CRISPR-suppressor scanning reveals a nonenzymatic role of LSD1 in AML. _Nat. Chem. Biol._ 15, 529–539 (2019).
 - Gosavi, P. M. et al. Profiling the Landscape of Drug Resistance Mutations in Neosubstrates to Molecular Glue Degraders. _ACS Cent. Sci._ (2021).
+- Hanna, R. E. et al. Massively parallel assessment of human variants with base editor screens. _Cell_ 184, 1064-1080.e20 (2021).
+- Clement, K. et al. CRISPResso2 provides accurate and rapid genome editing sequence analysis. _Nat. Biotechnol._ 37, 224–226 (2019).
+- Kamburov, A. et al. Comprehensive assessment of cancer missense mutation clustering in protein structures. _Proc. Natl. Acad. Sci._ 112, E5486–E5495 (2015).
 - Eddy, S. R. Accelerated Profile HMM Searches. _PLoS Comput. Biol._ 7, e1002195 (2011).
 - Suzek, B. E. et al. UniRef clusters: a comprehensive and scalable alternative for improving sequence similarity searches. _Bioinformatics_ 31, 926–932 (2015).
 - El-Gebali, S. et al. The Pfam protein families database in 2019. _Nucleic Acids Res._ 47, D427–D432 (2019).
