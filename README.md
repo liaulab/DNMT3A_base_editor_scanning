@@ -19,7 +19,7 @@ Code used to annotate sgRNAs with key information for analysis (i.e., to generat
 - Library-input-v3.csv, which contains the sequences of library sgRNAs and base information.
 
 ## 2. Base editor scanning data analysis scripts
-Code used for processing raw reads and analyzing DNMT3A base editor scanning results, including PWES analysis. 'Batch_info.csv' input file is included in this directory. Supplementary Table 2 provides the normalized counts for each replicate; raw reads are available upon request.
+Code used for processing raw reads and analyzing DNMT3A base editor scanning results, including PWES analysis. 'Batch_info.csv' input file is included in this directory. Supplementary Table 2 provides the normalized read counts at the replicate level. Raw fastq files are available upon request.
 
 ## 3. Genotyping analysis scripts
 
