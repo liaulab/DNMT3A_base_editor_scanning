@@ -5,7 +5,7 @@ Repository containing code used in Lue et al., Base editor scanning charts the D
 DNA methylation is critical for regulating gene expression, necessitating its accurate placement by enzymes such as the DNA methyltransferase DNMT3A. Dysregulation of this process is known to cause aberrant development and oncogenesis, yet how DNMT3A is regulated holistically by its three domains remains challenging to study. Here we integrate base editing with a DNA methylation reporter to perform in situ mutational scanning of DNMT3A in cells. We identify mutations throughout the protein that perturb function, including ones at an interdomain interface that block allosteric activation. Unexpectedly, we also find mutations in the PWWP domain, a histone reader, that modulate enzyme activity despite preserving histone recognition and protein stability. These effects arise from altered PWWP domain DNA affinity, which we show is a noncanonical function required for full activity in cells. Our findings highlight mechanisms of interdomain crosstalk and demonstrate a generalizable strategy to probe sequence-activity relationships of nonessential chromatin regulators.
 
 ## Repository Contents
-This repository contains .py and .sh scripts used for next-generation sequencing data analysis and evolutionary conservation analysis. Additionally, key input files are provided in the appropriate subdirectories (or otherwise in the main publication), as detailed below. Contents are organized into the following subdirectories:
+This repository contains .py and .sh scripts used for next-generation sequencing data analysis and evolutionary conservation analysis. Additionally, key input files are provided in the appropriate subdirectories (or otherwise in the main publication), as detailed below. Raw fastq files are available upon request. Contents are organized into the following subdirectories:
 1. Base editing sgRNA library annotation scripts
 2. Base editor scanning data analysis scripts
 3. Genotyping analysis scripts
@@ -19,13 +19,16 @@ Code used to annotate sgRNAs with key information for analysis (i.e., to generat
 - Library-input-v3.csv, which contains the sequences of library sgRNAs and base information.
 
 ## 2. Base editor scanning data analysis scripts
-Code used to process raw reads and analyze DNMT3A base editor scanning results, including PWES analysis. 'Batch_info.csv' input file is included in this directory. Supplementary Table 2 provides the normalized read counts at the replicate level. Raw fastq files are available upon request.
+Code used to process raw reads and analyze DNMT3A base editor scanning results, including PWES analysis. 'Batch_info.csv' input file is included in this directory. Supplementary Table 2 provides the normalized read counts at the replicate level.
 
 ## 3. Genotyping analysis scripts
-Code used to analyze genotyping results and construct allele tables.
+Code used to analyze genotyping results and construct allele tables. Inputs to scripts are CRISPResso2 output, as well as the .txt CRISPResso2 batch files (included in the subdirectory). Scripts are as follows:
+- genotyping_1.py, for analysis of sgW698 (Fig. 1i and Extended Data Fig. 1f) and sgE756 and sgG532 (Fig. 2f and Extended Data Fig. 2f) genotyping.
+- genotyping_2.py, for analysis of sgRNA validation genotyping (Fig. 4c and Extended Data Fig. 4b,d) and construction of allele table (Supplementary Table 4).
+- genotyping_3.py, for analysis of base editing around E342 codon (Extended Data Fig. 6b).
 
 ## 4. Reporter bisulfite sequencing analysis script
-Code used to analyze reporter bisulfite sequencing results.
+Code used to analyze reporter bisulfite amplicon sequencing data (Extended Data Fig. 1c). Input to script is CRISPResso2 output.
 
 ## 5. PWWP evolutionary conservation analysis script
 Code used to...
