@@ -6,34 +6,34 @@ DNA methylation is critical for regulating gene expression, necessitating its ac
 
 ## Repository Contents
 This repository contains .py and .sh scripts used for next-generation sequencing data analysis and evolutionary conservation analysis. Additionally, key input files are provided in the appropriate subdirectories (or otherwise in the main publication), as detailed below. Raw fastq files are available upon request. Contents are organized into the following subdirectories:
-1. Base editing sgRNA library annotation scripts
-2. Base editor scanning data analysis scripts
-3. Genotyping analysis scripts
-4. Reporter bisulfite sequencing analysis script
-5. PWWP evolutionary conservation analysis script
-6. Genomics analysis scripts
+1. Base editing sgRNA library annotation code
+2. Base editor scanning data analysis code
+3. Genotyping analysis code
+4. Reporter bisulfite sequencing analysis code
+5. PWWP evolutionary conservation analysis code
+6. Genomics analysis code
 
-## 1. Base editing sgRNA library annotation scripts
+## 1. Base editing sgRNA library annotation code
 Code used to annotate sgRNAs with key information for analysis (i.e., to generate Supplementary Table 1). Two inputs are included in this directory:
 - 200225_DNMT3A2_Input.fasta, which contains the sequences of DNMT3A isoform 2 (NM_153759.3, hg38) coding sequence exons. Each record corresponds to an exon with flanking intronic sequences (55 bp upstream and 55 bp downstream).
 - Library-input-v3.csv, which contains the sequences of library sgRNAs and base information.
 
-## 2. Base editor scanning data analysis scripts
+## 2. Base editor scanning data analysis code
 Code used to process raw reads and analyze DNMT3A base editor scanning results, including PWES analysis. 'Batch_info.csv' input file is included in this directory. Supplementary Table 2 provides the normalized read counts at the replicate level.
 
-## 3. Genotyping analysis scripts
+## 3. Genotyping analysis code
 Code used to analyze genotyping results and construct allele tables. Inputs to scripts are CRISPResso2 output, as well as the .txt CRISPResso2 batch files (included in the subdirectory). Scripts are as follows:
 - genotyping_1.py, for analysis of sgW698 (Fig. 1i and Extended Data Fig. 1f) and sgE756 and sgG532 (Fig. 2f and Extended Data Fig. 2f) genotyping.
 - genotyping_2.py, for analysis of sgRNA validation genotyping (Fig. 4c and Extended Data Fig. 4b,d) and construction of allele table (Supplementary Table 4).
 - genotyping_3.py, for analysis of base editing around E342 codon (Extended Data Fig. 6b).
 
-## 4. Reporter bisulfite sequencing analysis script
+## 4. Reporter bisulfite sequencing analysis code
 Code used to analyze reporter bisulfite amplicon sequencing data (Extended Data Fig. 1c). Input to script is CRISPResso2 output.
 
-## 5. PWWP evolutionary conservation analysis script
+## 5. PWWP evolutionary conservation analysis code
 Code used to...
 
-## 6. Genomics analysis scripts
+## 6. Genomics analysis code
 Code used to analyze ChIP-seq and RRBS data. Raw and processed ChIP-seq and RRBS data have been deposited to NCBI GEO (GSE199890).
 - ChIP-seq_data_processing.sh, for aligning and processing ChIP-seq raw reads to generate input-normalized bigWig files.
 - RRBS_data_processing.sh, for trimming, aligning, and processing RRBS raw reads to generate bedGraph files.
