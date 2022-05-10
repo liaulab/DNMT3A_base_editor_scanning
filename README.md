@@ -9,8 +9,9 @@ This repository contains .py and .sh scripts used for next-generation sequencing
 1. Base editing sgRNA library annotation scripts
 2. Base editor scanning data analysis scripts
 3. Genotyping analysis scripts
-4. PWWP evolutionary conservation analysis script
-5. Genomics analysis scripts
+4. Targeted bisulfite sequencing analysis script
+5. PWWP evolutionary conservation analysis script
+6. Genomics analysis scripts
 
 ## 1. Base editing sgRNA library annotation scripts
 Code used to annotate sgRNAs with key information for analysis (i.e., to generate Supplementary Table 1). Two inputs are included in this directory:
