@@ -5,7 +5,7 @@ Repository containing code used in Lue et al., Base editor scanning charts the D
 DNA methylation is critical for regulating gene expression, necessitating its accurate placement by enzymes such as the DNA methyltransferase DNMT3A. Dysregulation of this process is known to cause aberrant development and oncogenesis, yet how DNMT3A is regulated holistically by its three domains remains challenging to study. Here we integrate base editing with a DNA methylation reporter to perform in situ mutational scanning of DNMT3A in cells. We identify mutations throughout the protein that perturb function, including ones at an interdomain interface that block allosteric activation. Unexpectedly, we also find mutations in the PWWP domain, a histone reader, that modulate enzyme activity despite preserving histone recognition and protein stability. These effects arise from altered PWWP domain DNA affinity, which we show is a noncanonical function required for full activity in cells. Our findings highlight mechanisms of interdomain crosstalk and demonstrate a generalizable strategy to probe sequence-activity relationships of nonessential chromatin regulators.
 
 ## Repository Contents
-This repository contains .py and .sh scripts used for next-generation sequencing data analysis and evolutionary conservation analysis. Inputs are provided in the subfolders or as Source Data in the publication, as detailed below. Contents are organized into the following subdirectories:
+This repository contains .py and .sh scripts used for next-generation sequencing data analysis and evolutionary conservation analysis. Key input files are provided in the appropriate subdirectories or in the main publication, as detailed below. Contents are organized into the following subdirectories:
 1. Base editing sgRNA library annotation scripts
 2. Base editor scanning data analysis scripts
 3. Genotyping analysis scripts
@@ -19,7 +19,7 @@ Code used to annotate sgRNAs with key information for analysis (i.e., to generat
 - Library-input-v3.csv, which contains the sequences of library sgRNAs and base information.
 
 ## 2. Base editor scanning data analysis scripts
-Code used for processing raw reads and analyzing DNMT3A base editor scanning results, including PWES analysis. 'Batch_info.csv' input file is included in this directory.
+Code used for processing raw reads and analyzing DNMT3A base editor scanning results, including PWES analysis. 'Batch_info.csv' input file is included in this directory. Supplementary Table 2 provides the normalized counts for each replicate; raw reads are available upon request.
 
 ## 3. Genotyping analysis scripts
 
