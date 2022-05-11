@@ -31,7 +31,7 @@ Code used to analyze genotyping results and construct allele tables. Inputs to s
 Code used to analyze reporter bisulfite amplicon sequencing data (Extended Data Fig. 1c). Input to script is CRISPResso2 output.
 
 ## 5. PWWP evolutionary conservation analysis code
-Code used to...
+Code used to... (Fig. 4e and Supplementary Table 5).
 
 ## 6. Genomics analysis code
 Code used to analyze ChIP-seq and RRBS data. Raw and processed ChIP-seq and RRBS data have been deposited to NCBI GEO (GSE199890).
