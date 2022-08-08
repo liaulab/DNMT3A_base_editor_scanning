@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Analysis of sgE342.1, .2, and .3 genotyping data (Extended Data Fig. 6b)
-@author: nlclarinet8
+@author: Nicholas Lue
 """
 
 #%% Import Packages
