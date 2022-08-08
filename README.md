@@ -59,6 +59,8 @@ Code used to analyze ChIP-seq and RRBS data. Raw and processed ChIP-seq and RRBS
 - Krueger, F. & Andrews, S. R. Bismark: a flexible aligner and methylation caller for Bisulfite-Seq applications. _Bioinformatics_ 27, 1571–1572 (2011).
 - MethylDackel (<https://github.com/dpryan79/MethylDackel>)
 - Quinlan, A. R. & Hall, I. M. BEDTools: a flexible suite of utilities for comparing genomic features. _Bioinformatics_ 26, 841–842 (2010).
+- Condon, D. E. et al. Defiant: (DMRs: easy, fast, identification and ANnoTation) identifies differentially Methylated regions from iron-deficient rat hippocampus. _BMC Bioinform._ 19, 31 (2018).
+
 
 
 
