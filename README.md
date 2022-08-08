@@ -23,21 +23,23 @@ Code used to process raw reads and analyze DNMT3A base editor scanning results, 
 
 ## 3. Genotyping analysis code
 Code used to analyze genotyping results and construct allele tables. Inputs to scripts are CRISPResso2 output, as well as the .txt CRISPResso2 batch files (included in the subdirectory). Scripts are as follows:
-- genotyping_1.py, for analysis of sgW698 (Fig. 1i and Extended Data Fig. 1f) and sgE756 and sgG532 (Fig. 2f and Extended Data Fig. 2f) genotyping.
-- genotyping_2.py, for analysis of sgRNA validation genotyping (Fig. 4c and Extended Data Fig. 4b,d) and construction of allele table (Supplementary Table 4).
-- genotyping_3.py, for analysis of base editing around E342 codon (Extended Data Fig. 6b).
+- genotyping_1.py, for analysis of sgW698 (Fig. 1i and Extended Data Fig. 1f) and sgE756 and sgG532 (Fig. 2f and Extended Data Fig. 2i) genotyping.
+- genotyping_2.py, for analysis of sgRNA validation genotyping (Fig. 4c and Extended Data Fig. 5b,d) and construction of allele table (Supplementary Table 5).
+- genotyping_3.py, for analysis of base editing around E342 codon (Extended Data Fig. 7b).
+- genotyping_4.py, for analysis of clonal genotyping for select sgRNAs (Extended Data Fig. 3a,b).
 
 ## 4. Reporter bisulfite sequencing analysis code
 Code used to analyze reporter bisulfite amplicon sequencing data (Extended Data Fig. 1c). Input to script is CRISPResso2 output.
 
 ## 5. PWWP evolutionary conservation analysis code
-Code used to... (Fig. 4e and Supplementary Table 5).
+Code used to perform PWWP evolutionary conservation analysis (Fig. 4e and Supplementary Table 6).
 
 ## 6. Genomics analysis code
 Code used to analyze ChIP-seq and RRBS data. Raw and processed ChIP-seq and RRBS data have been deposited to NCBI GEO (GSE199890).
 - ChIP-seq_data_processing.sh, for aligning and processing ChIP-seq raw reads to generate input-normalized bigWig files.
 - RRBS_data_processing.sh, for trimming, aligning, and processing RRBS raw reads to generate bedGraph files.
 - RRBS_and_ChIP-seq_analysis.py, for downstream analysis of genomics data.
+- DMR_analysis.sh, for analysis of DMRs.
 
 ## Citations
 - Vinyard, M. E. et al. CRISPR-suppressor scanning reveals a nonenzymatic role of LSD1 in AML. _Nat. Chem. Biol._ 15, 529–539 (2019).
