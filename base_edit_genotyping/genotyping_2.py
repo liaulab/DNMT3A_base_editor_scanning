@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Analysis of genotyping for sgRNA validation experiments shown in Fig. 1i, 2f,
-and 4c and Extended Data Fig. 4b,d, as well as construction of allele table in
-Supplementary Table 4.
+Analysis of genotyping for sgRNA validation experiments shown in Fig. 4c
+and Extended Data Fig. 5b,d, as well as construction of allele table in
+Supplementary Table 5.
 
 @author: Nicholas Lue
 """
