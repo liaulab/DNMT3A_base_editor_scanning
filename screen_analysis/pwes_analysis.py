@@ -118,7 +118,7 @@ df_sums['Summed_delta_PWES'] = df_sums['4U7T_scores'].sub(df_sums['4U7P_scores']
 
 #%% Export summary csv file
 
-# Export calculations (i.e., for Supplementary Table 3)
+# Export calculations (i.e., for Supplementary Table)
 df_sums.to_csv('DNMT3A_scanning_PWES_analysis_summary.csv', index=False)
 
 
