@@ -2,7 +2,7 @@
 Repository containing code used in Lue et al. Base editor scanning charts the DNMT3A activity landscape (2022). Preprint at _bioRxiv_, doi: [10.1101/2022.04.12.487946](https://doi.org/10.1101/2022.04.12.487946). Additional data or code is available from the corresponding author, Dr. Brian B. Liau (<liau@chemistry.harvard.edu>), upon request.
 
 ## Abstract
-DNA methylation is critical for regulating gene expression, necessitating its accurate placement by enzymes such as the DNA methyltransferase DNMT3A. Dysregulation of this process is known to cause aberrant development and oncogenesis, yet how DNMT3A is regulated holistically by its three domains remains challenging to study. Here we integrate base editing with a DNA methylation reporter to perform in situ mutational scanning of DNMT3A in cells. We identify mutations throughout the protein that perturb function, including ones at an interdomain interface that block allosteric activation. Unexpectedly, we also find mutations in the PWWP domain, a histone reader, that modulate enzyme activity despite preserving histone recognition and protein stability. These effects arise from altered PWWP domain DNA affinity, which we show is a noncanonical function required for full activity in cells. Our findings highlight mechanisms of interdomain crosstalk and demonstrate a generalizable strategy to probe sequence-activity relationships of nonessential chromatin regulators.
+DNA methylation is critical for regulating gene expression, necessitating its accurate placement by enzymes such as the DNA methyltransferase DNMT3A. Dysregulation of this process is known to cause aberrant development and oncogenesis, yet how DNMT3A is regulated holistically by its three domains remains challenging to study. Here we integrate base editing with a DNA methylation reporter to perform in situ mutational scanning of _DNMT3A_ in cells. We identify mutations throughout the protein that perturb function, including ones at an interdomain interface that block allosteric activation. Unexpectedly, we also find mutations in the PWWP domain, a histone reader, that modulate enzyme activity despite preserving histone recognition and protein stability. These effects arise from altered PWWP domain DNA affinity, which we show is a noncanonical function required for full activity in cells. Our findings highlight mechanisms of interdomain crosstalk and demonstrate a generalizable strategy to probe sequence-activity relationships of nonessential chromatin regulators.
 
 ## Repository Contents
 This repository contains code used for next-generation sequencing data analysis and evolutionary conservation analysis. Specific file or directory names have been replaced where relevant with generic names. Additionally, key input files are provided in the appropriate subdirectories (or otherwise in the main publication), as detailed below. Raw fastq files are available upon request. Contents are organized into the following subdirectories:
@@ -14,30 +14,30 @@ This repository contains code used for next-generation sequencing data analysis 
 6. Genomics analysis code
 
 ## 1. Base editing sgRNA library annotation code
-Code used to annotate sgRNAs with key information for analysis (i.e., to generate Supplementary Table 1). Two inputs are included in this directory:
+Code used to annotate sgRNAs with key information for analysis (i.e., to generate Supplementary Data 1). Two inputs are included in this directory:
 - 200225_DNMT3A2_Input.fasta, which contains the sequences of DNMT3A isoform 2 (NM_153759.3, hg38) coding sequence exons. Each record corresponds to an exon with flanking intronic sequences (55 bp upstream and 55 bp downstream).
 - Library-input-v3.csv, which contains the sequences of library sgRNAs and base information.
 
 ## 2. Base editor scanning data analysis code
-Code used to process raw reads and analyze DNMT3A base editor scanning results, including PWES analysis. 'Batch_info.csv' input file is included in this directory. Supplementary Table 2 provides the normalized read counts at the replicate level.
+Code used to process raw reads and analyze DNMT3A base editor scanning results, including PWES analysis. 'Batch_info.csv' input file is included in this directory. Supplementary Data 2 provides the normalized read counts at the replicate level.
 
 ## 3. Genotyping analysis code
 Code used to analyze genotyping results and construct allele tables. Inputs to scripts are CRISPResso2 output, as well as the .txt CRISPResso2 batch files (included in the subdirectory). Scripts are as follows:
 - genotyping_1.py, for analysis of sgW698 (Fig. 1i and Extended Data Fig. 1f) and sgE756 and sgG532 (Fig. 2f and Extended Data Fig. 2i) genotyping.
-- genotyping_2.py, for analysis of sgRNA validation genotyping (Fig. 4c and Extended Data Fig. 5b,d) and construction of allele table (Supplementary Table 5).
+- genotyping_2.py, for analysis of sgRNA validation genotyping (Fig. 4c and Extended Data Fig. 5b,d) and construction of allele table (Supplementary Data 5).
 - genotyping_3.py, for analysis of base editing around E342 codon (Extended Data Fig. 7b).
-- genotyping_4.py, for analysis of clonal genotyping for select sgRNAs (Extended Data Fig. 3a,b and Supplementary Table 6).
+- genotyping_4.py, for analysis of clonal genotyping for select sgRNAs (Extended Data Fig. 3a,b and Supplementary Data 6).
 
 ## 4. Reporter bisulfite sequencing analysis code
 Code used to analyze reporter bisulfite amplicon sequencing data (Extended Data Fig. 1c). Input to script is CRISPResso2 output.
 
 ## 5. PWWP evolutionary conservation analysis code
-Code used to perform PWWP evolutionary conservation analysis (Fig. 4e and Supplementary Table 7).
+Code used to perform PWWP evolutionary conservation analysis (Fig. 4e and Supplementary Data 7).
 
 ## 6. Genomics analysis code
 Code used to analyze ChIP-seq and RRBS data. Raw and processed ChIP-seq and RRBS data have been deposited to NCBI GEO (GSE199890).
 - ChIP-seq_data_processing.sh, for aligning and processing ChIP-seq raw reads to generate input-normalized bigWig files.
-- RRBS_data_processing.sh, for trimming, aligning, and processing RRBS raw reads to generate bedGraph files.
+- RRBS_data_processing.sh, for trimming, aligning, and processing RRBS raw reads.
 - RRBS_and_ChIP-seq_analysis.py, for downstream analysis of genomics data.
 - DMR_analysis.sh, for analysis of DMRs.
 
