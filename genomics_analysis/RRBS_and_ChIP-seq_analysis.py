@@ -153,7 +153,7 @@ plot_boxes(df_plot=df_500_melt.loc[df_500_melt['variable'].isin(avg_list)],
 
 
 #%% Histone modification quartile analysis
-# Code to make Fig. 5g and Extended Data Fig. 8a
+# Code to make Fig. 5g and Extended Data Fig. 9c
 
 df_10_ABCDE = pd.read_csv('ABCDE_intersection_global_methylation.tsv', sep='\t')
 
@@ -193,7 +193,7 @@ plot_boxes(df_plot=df_quartiles_ABCDE_melt.loc[df_quartiles_ABCDE_melt['variable
 
 
 #%% High-low quartile methylation difference analysis
-# Analysis for Extended Data Fig. 8b
+# Analysis for Extended Data Fig. 9d
 
 col_list_2 = rrbs_list+['K27_quartiles','K36_quartiles']
 df_quartiles_collapsed = df_quartiles_ABCDE[col_list_2].groupby(by=['K36_quartiles']).median().reset_index()
@@ -208,7 +208,7 @@ for samp in rrbs_list:
 df_diff.to_csv('4th-1st_K36_quartile_delta_methylation.csv',index=False)
 
 #%% Histone modification 1000-quantile analysis
-# Code to make Extended Data Fig. 8c
+# Code to make Extended Data Fig. 9e
 
 # 1000 quantiles
 df_fine = df_10_ABCDE[rrbs_list+avg_list+['H3K4me3', 'H3K27me3', 'H3K36me2']].copy()
