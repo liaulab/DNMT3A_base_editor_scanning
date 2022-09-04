@@ -3,7 +3,7 @@
 """
 Analysis of genotyping for sgRNA validation experiments shown in Fig. 4c
 and Extended Data Fig. 5b,d, as well as construction of allele table in
-Supplementary Table 5.
+Supplementary Data 5.
 
 @author: Nicholas Lue
 """
@@ -149,7 +149,7 @@ def translate_allele(inseq, tr_i, tr_f):
 
 
 #%% Allele table analysis
-# This section presents code used to construct Supplementary Table 4.
+# This section presents code used to construct Supplementary Data 5.
 
 # Filter to keep only alleles with >1% allele frequence
 allele_tables_filtered = {}
