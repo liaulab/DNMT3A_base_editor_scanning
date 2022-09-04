@@ -632,6 +632,6 @@ key_cols = ['sgRNA_ID', 'sgRNA_seq', 'Gene', 'sgRNA_pos', 'sgRNA_strand',
 
 annotated_df.to_csv('Annotated_Library_Full.csv', index=False)
 
-# This generates Supplementary Table 1.
+# This generates Supplementary Data 1.
 annotated_df[key_cols].to_csv('Annotated_Library_Key_Columns.csv', index=False)
 
