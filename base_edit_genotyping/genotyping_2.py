@@ -202,7 +202,7 @@ df_processed.to_csv('Analysis/Allele_table_analysis.csv',index=False)
 
 #%% Extract C to T conversion data
 # This section is for calculating C to T conversion for use in heatmaps
-# (e.g., Fig. 4c) or dotplots (e.g., Fig. 1i).
+# (e.g., Fig. 4c).
 
 # Define the positions in nt_frequency dataframes where each guide is found
 # Number corresponds to protospacer position +1 in the amplicon, 1-indexed
