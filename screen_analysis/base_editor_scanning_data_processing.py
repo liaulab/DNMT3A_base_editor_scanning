@@ -116,7 +116,7 @@ df_reps = df_reps.rename(mapper=samples_dict, axis=1)
 key_cols = ['sgRNA_ID', 'sgRNA_seq', 'Gene', 'Mut_type', 'Domain',
             'Mut_list_3A1', 'Edit_site_3A1'] + list(samples_dict.values())
 
-# Export processed data for Supplementary Table 2
+# Export processed data for Supplementary Data 2
 df_reps[key_cols].to_csv('Processed/DNMT3A_scanning_t0norm_reps_keycols.csv', index=False)
 
 
