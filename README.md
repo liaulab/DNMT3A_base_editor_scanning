@@ -48,6 +48,7 @@ Code used to analyze ChIP-seq and RRBS data. Raw and processed ChIP-seq and RRBS
 - Clement, K. et al. CRISPResso2 provides accurate and rapid genome editing sequence analysis. _Nat. Biotechnol._ 37, 224–226 (2019).
 - Kamburov, A. et al. Comprehensive assessment of cancer missense mutation clustering in protein structures. _Proc. Natl. Acad. Sci._ 112, E5486–E5495 (2015).
 - Eddy, S. R. Accelerated Profile HMM Searches. _PLoS Comput. Biol._ 7, e1002195 (2011).
+- Hopf, T. A. et al. The EVcouplings Python framework for coevolutionary sequence analysis. _Bioinformatics_ 35, 1582–1584 (2019).
 - Suzek, B. E. et al. UniRef clusters: a comprehensive and scalable alternative for improving sequence similarity searches. _Bioinformatics_ 31, 926–932 (2015).
 - El-Gebali, S. et al. The Pfam protein families database in 2019. _Nucleic Acids Res._ 47, D427–D432 (2019).
 - Sievers, F. et al. Fast, scalable generation of high-quality protein multiple sequence alignments using Clustal Omega. _Mol. Syst. Biol._ 7, 539–539 (2011).
